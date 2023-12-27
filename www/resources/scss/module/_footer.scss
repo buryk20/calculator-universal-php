@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+
+  @extend %flexCent;
+  background-color: $color-gray-200;
+
+  &__wrp {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include widthPaga;
+    @extend %flexCentBetwin;
+
+    color: $color-blue-80;
+  }
+
+  &__link-star-up-wrp {
+    @extend %flexStartJus;
+  }
+}

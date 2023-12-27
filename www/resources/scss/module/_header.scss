@@ -1,0 +1,219 @@
+.header {
+  width: 100%;
+  height: 72px;
+
+  position: fixed;
+
+  @extend %flexCent;
+
+  background-color: $color-gray-200;
+  z-index: 99999999;
+
+  &__wrp {
+    @include widthPaga;
+    @extend %flexCentBetwin;
+  }
+
+  &__logo-img {
+    max-width: 200px;
+
+    z-index: 999999999;
+  }
+
+  &__locale-ru,
+  &__locale-ua {
+    height: 24px;
+    font-size: 20px;
+    color: $color-blue-80;
+  }
+
+  &__locale-ua {
+    &:hover {
+      color: $color-blue-70;
+    }
+
+    &:hover .header__locale-ua-icon {
+      border: 2px solid $color-blue-10;
+    }
+  }
+
+  &__locale-ru {
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__locale-ua {
+    @extend %flexCent;
+
+    gap: 8px;
+  }
+
+  &__locale-ua-icon {
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  &__locale-line {
+    height: 24px;
+    width: 2px;
+
+    display: flex;
+
+    background-color: $color-blue-80;
+  }
+
+  &__locale-wrp {
+    @extend %flexCent;
+
+    gap: 18px;
+
+    @include __860 {
+      display: none;
+    }
+
+    &.locale-mob {
+      display: flex;
+    }
+  }
+
+  &__locale-ua-wrp {
+    @extend %flexCent;
+
+    gap: 8px;
+  }
+
+  &__locale-item-wrp {
+    position: relative;
+  }
+
+  &__locale-item-wrp.active > a {
+    color:$color-blue-50;
+  }
+
+  &__locale-line-active {
+    width: 0;
+    height: 2px;
+
+    display: flex;
+
+    position: absolute;
+    bottom: -2px;
+
+    background-color: white;
+
+    &.active {
+      width: 100%;
+    }
+  }
+
+  &__menu-wrp {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    display: none;
+    z-index: 11111111;
+
+    @include __860 {
+      display: flex;
+    }
+
+    &.active .header__menu-btn-line-top {
+      transform: rotate(-45deg);
+      top: 0;
+
+      transition: 0.3s;
+    }
+
+    &.active .header__menu-btn-line-bottom {
+      transform: rotate(45deg);
+      bottom: -2px;
+
+      transition: 0.3s;
+    }
+
+    &.active .header__menu-btn-line-centre {
+      transform: scale(0);
+
+      transition: 0.3s;
+    }
+  }
+
+  &__menu-btn-wrp {
+    position: relative;
+  }
+
+  &__menu-btn-line-top,
+  &__menu-btn-line-centre,
+  &__menu-btn-line-bottom {
+    width: 24px;
+    height: 2px;
+
+    display: flex;
+
+    position: absolute;
+    right: -32px;
+
+    background-color: $color-blue-80;
+    transition: 0.3s;
+  }
+
+  &__menu-btn-line-top {
+    top: -9px;
+  }
+
+  &__menu-btn-line-bottom {
+    bottom: -10px;
+  }
+
+  &__menu-mob-wrp {
+    width: 0;
+    height: 100vh;
+
+    visibility: hidden;
+    opacity: 0;
+
+    position: fixed;
+    top: 72px;
+    right: 0;
+
+    background-color: white;
+    z-index: 99999;
+
+    transition: 0.3s;
+
+    &.active {
+      width: 100%;
+
+      visibility: inherit;
+      opacity: 1;
+
+      transition: width 0.3s;
+    }
+  }
+
+  &__menu-mob-cont-wrp {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+
+    display: flex;
+
+    gap: 16px;
+
+    @extend %flexColumCentre;
+  }
+
+  &__menu-mob-wrp-list-link {
+    margin-bottom: 36px;
+
+    @extend %flexColumCentre;
+
+    gap: 24px;
+  }
+}

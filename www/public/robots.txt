@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://calculator-universal.com.ua/sitemap.xml

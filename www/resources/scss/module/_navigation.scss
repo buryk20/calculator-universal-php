@@ -1,0 +1,38 @@
+.navigation {
+  @include __860 {
+    // display: none;
+  }
+
+  &__wrp {
+    top: 90px;
+
+    position: sticky;
+
+    a {
+      color: $color-blue-70;
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: revert;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__item-text {
+    display: flex;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+
+    display: flex;
+
+    border-bottom: 1px solid $color-gray-200;
+  }
+}

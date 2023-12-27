@@ -1,0 +1,28 @@
+.home {
+
+  &__wrp {
+    margin-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  &__img {
+    max-width: 588px;
+    width: 100%;
+
+    margin-bottom: 24px;
+  }
+
+  &__text-wrp {
+    gap: 16px;
+
+    display: flex;
+
+    @extend %flexColumCentre;
+
+    text-align: left;
+  }
+
+  &__link {
+    width: 100%;
+  }
+}
