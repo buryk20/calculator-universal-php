@@ -37,6 +37,7 @@
                             <a class="link" href="/raschet-ploshchadi-pryamougolnika">{{__('raschet-ploshchadi-pryamougolnika.title') }}</a>
                             <a class="link" href="/izmeneniya-raskladki-onlayn">{{__('izmeneniya-raskladki-onlayn.title') }}</a>
                             <a class="link" href="/vydalennya-zayvykh-symvoliv">{{__('vydalennya-zayvykh-symvoliv.title') }}</a>
+                            <a class="link" href="/kalkulyator-drobe">{{__('kalkulyator-drobe.title') }}</a>
                         </div>
                         <div class="header__locale-wrp locale-mob">
                             <div class="header__locale-item-wrp">

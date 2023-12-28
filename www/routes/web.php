@@ -33,6 +33,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     $controller->defineRoutes('raschet-ploshchadi-pryamougolnika', 'raschet-ploshchadi-pryamougolnika');
     $controller->defineRoutes('izmeneniya-raskladki-onlayn', 'izmeneniya-raskladki-onlayn' );
     $controller->defineRoutes('vydalennya-zayvykh-symvoliv', 'vydalennya-zayvykh-symvoliv');
+    $controller->defineRoutes('kalkulyator-drobe', 'kalkulyator-drobe');
 });
 
 Route::get('pages/{pageSlug}', [PageController::class, 'showPage'])->name('app');
@@ -61,6 +62,8 @@ Route::get('/sitemap', function () {
     $sitemap->add(Url::create('/ua/izmeneniya-raskladki-onlayn'));
     $sitemap->add(Url::create('/vydalennya-zayvykh-symvoliv'));
     $sitemap->add(Url::create('/ua/vydalennya-zayvykh-symvoliv'));
+    $sitemap->add(Url::create('/kalkulyator-drobe'));
+    $sitemap->add(Url::create('/ua/kalkulyator-drobe'));
 
     $sitemap->writeToFile(public_path('sitemap.xml'));
 

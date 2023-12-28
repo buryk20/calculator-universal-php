@@ -29,19 +29,6 @@
                         {{__('home.calcUpsLifeText') }}
                     </p>
                 </div>
-                <form method="post" action="{{ route('comments.store') }}">
-                    @csrf
-
-                    @php
-                        var_dump($test);
-                    @endphp
-
-                        <!-- остальные поля формы -->
-
-                    {{-- <input type="hidden" name="post_id" value="{{ $post->id }}"> --}}
-
-                    <button type="submit">Отправить</button>
-                </form>
             </div>
         </section>
     </div>

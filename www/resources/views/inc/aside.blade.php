@@ -30,6 +30,9 @@
         <a data-navigation-page-link class="navigation__link" href="{{ route('vydalennya-zayvykh-symvoliv')}}">
             <h2 class="navigation__item-text" class="navigation__item-text">{{__('vydalennya-zayvykh-symvoliv.title') }}</h2>
         </a>
+        <a data-navigation-page-link class="navigation__link" href="{{ route('kalkulyator-drobe')}}">
+            <h2 class="navigation__item-text" class="navigation__item-text">{{__('kalkulyator-drobe.title') }}</h2>
+        </a>
     </div>
 </div>
 
