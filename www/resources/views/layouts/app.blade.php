@@ -21,6 +21,9 @@
     <link rel="canonical" href="{{ URL::current() }}">
     <link rel="alternate" hreflang="ru-ua" href="{{ str_replace("/ru", "", LaravelLocalization::getLocalizedURL('ru')) }}" >
     <link rel="alternate" hreflang="uk-ua" href="{{ LaravelLocalization::getLocalizedURL('ua') }}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5192686234801830"
+     crossorigin="anonymous">
+    </script>
     <meta property="og:image" content="http://calculator-universal.com.ua/img/logo-social.png">
     <meta property="og:site_name" content="Calculator universal">
     <meta property="og:type" content="website">
